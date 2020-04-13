@@ -1,0 +1,42 @@
+// main: ../style.less
+.header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+//    фиксируем шапку
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+.header__logo {
+
+}
+.header__nav {
+    display: flex;
+    height: 100%;
+    font-size: 15px;
+}
+
+.header__nav__link {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: @white;
+    text-decoration: none;
+}
+
+.header__nav__link:last-child {
+    margin-right: 0;
+}
+
+.header__nav__link.active,.header__nav__link:hover {
+    background-color: #004AF2;
+}
