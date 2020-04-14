@@ -1,6 +1,8 @@
 // main: ../style.less
 .btn {
-    padding: 11px 20px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 20px;
     background: grey;
 
     cursor: pointer;
@@ -13,10 +15,15 @@
     font-weight: bold;
     color: @white;
     text-align: center;
+    text-decoration: none;
+}
+
+.btn--block {
+    width: 100%;
+    display: block;
 }
 
 .btn--orange {
     background-image: linear-gradient(to right , #FF903E, #FF2C2C);
-    display: block;
-    width: 100%;
+
 }
