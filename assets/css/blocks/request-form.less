@@ -10,12 +10,18 @@
     position: relative;
     bottom: -30px;
 }
+
+.request-form--right {
+    margin-left: auto;
+}
+
 .request-form__header {
     padding: 20px 30px;
     color: #033FC9;
 
 }
 .request-form__title {
+    margin-bottom: 5px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 30px;
@@ -70,9 +76,31 @@
     background: url("../image/request form/mail icon.svg") left 15px top 6px  no-repeat;
 }
 
+.input--dark {
+    color: @text-col;
+    border-bottom-color: #E8E8E8;
+}
 
+.input--dark:focus {
+    border-bottom-color: @black;
+}
 
+.input--dark::placeholder {
+    border-bottom-color: #E8E8E8;
+    color: @text-col;
+}
 
+.input--dark.input--user {
+    background-image: url("../image/modals/user-black.svg");
+}
+
+.input--dark.input--phone {
+    background-image: url("../image/modals/phone-black.svg");
+}
+
+.input--dark.input--mail {
+    background-image: url("../image/modals/mail-black.svg");
+}
 
 
 
